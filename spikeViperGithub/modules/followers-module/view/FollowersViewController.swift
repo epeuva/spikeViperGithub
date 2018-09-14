@@ -14,11 +14,15 @@ protocol FollowersViewInterface: class {
 }
 
 class FollowersViewController: UIViewController {
+    
+    // Reference to Presenter's Interface (Followers)
+    var presenter:FollowersModuleInterface!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.presenter.updateView()
     }
     
 
