@@ -8,13 +8,9 @@
 
 import Foundation
 
-protocol FollowersInteractorInput: class {
-    func fetchFollowers()
-}
-
-class FollowersInteractor : FollowersInteractorInput
+class FollowersInteractor : FollowersPresenterToInteractorProtocol
 {
-    weak var output: FollowersInteractorOutput!
+    var presenter: FollowersInteractorToPresenterProtocol?
     
     func fetchFollowers() {
         // TODO

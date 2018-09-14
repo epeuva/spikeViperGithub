@@ -25,3 +25,17 @@ protocol FollowersPresenterToViewProtocol: class {
     func showNoContentsScreen()
     func showError()
 }
+
+protocol FollowersPresenterToInteractorProtocol: class {
+    var presenter: FollowersInteractorToPresenterProtocol? {get set}
+    
+    func fetchFollowers()
+}
+
+
+// MARK: Interactor to ...
+
+protocol FollowersInteractorToPresenterProtocol: class {
+    func followersFetchedSuccess(followers: [Follower])
+    func followersFetchFailed()
+}

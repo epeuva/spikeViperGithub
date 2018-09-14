@@ -8,13 +8,6 @@
 
 import Foundation
 
-protocol FollowersModuleInterface: class {
-    func updateView()
-}
-
-protocol FollowersInteractorOutput: class {
-    func FollowersFetched(followers: [Follower])
-}
 
 class FollowersPresenter : FollowersViewToPresenterProtocol
 {
@@ -24,4 +17,16 @@ class FollowersPresenter : FollowersViewToPresenterProtocol
         // TODO
     }
 
+}
+
+extension FollowersPresenter : FollowersInteractorToPresenterProtocol {
+    
+    func followersFetchedSuccess(followers: [Follower]) {
+        // TODO
+    }
+    
+    func followersFetchFailed() {
+        // TODO
+    }
+    
 }
