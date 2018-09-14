@@ -8,32 +8,34 @@
 
 import UIKit
 
-protocol FollowersViewInterface: class {
-    func showFollowersData(followers: [Follower])
-    func showNoContentsScreen()
-}
-
 class FollowersViewController: UIViewController {
     
     // Reference to Presenter's Interface (Followers)
-    var presenter:FollowersModuleInterface!
+    var presenter:FollowersViewToPresenterProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.presenter.updateView()
+        self.presenter.startUpdateView()
+    }
+
+
+}
+
+extension FollowersViewController: FollowersPresenterToViewProtocol {
+    
+    func showFollowersData(followers: [Follower]) {
+        // TODO
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showNoContentsScreen() {
+        // TODO
     }
-    */
-
+    
+    func showError() {
+        // TODO
+    }
+    
+    
 }

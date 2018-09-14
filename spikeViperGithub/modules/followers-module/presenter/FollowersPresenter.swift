@@ -12,11 +12,15 @@ protocol FollowersModuleInterface: class {
     func updateView()
 }
 
-class FollowersPresenter : FollowersModuleInterface
+protocol FollowersInteractorOutput: class {
+    func FollowersFetched(followers: [Follower])
+}
+
+class FollowersPresenter : FollowersViewToPresenterProtocol
 {
-    weak var view: FollowersViewInterface!
+    weak var view: FollowersPresenterToViewProtocol?
     
-    func updateView() {
+    func startUpdateView() {
         // TODO
     }
 
