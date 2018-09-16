@@ -17,6 +17,7 @@
 		33D33FFB214BDD6B00BA8AF7 /* FollowersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */; };
 		33D33FFD214BDE7200BA8AF7 /* FollowersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */; };
 		33D33FFF214BE56400BA8AF7 /* FollowersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */; };
+		AE136746214EC3F6003612DC /* FollowersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE136745214EC3F6003612DC /* FollowersRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersPresenter.swift; sourceTree = "<group>"; };
 		33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersInteractor.swift; sourceTree = "<group>"; };
 		33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersProtocol.swift; sourceTree = "<group>"; };
+		AE136745214EC3F6003612DC /* FollowersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +88,10 @@
 		33D33FED214BD22B00BA8AF7 /* followers-module */ = {
 			isa = PBXGroup;
 			children = (
+				AE136744214EC3E1003612DC /* router */,
 				33D33FF3214BD27800BA8AF7 /* protocols */,
 				33D33FF2214BD26A00BA8AF7 /* entity */,
 				33D33FF1214BD25C00BA8AF7 /* interactor */,
-				33D33FF0214BD25600BA8AF7 /* router */,
 				33D33FEF214BD24E00BA8AF7 /* presenter */,
 				33D33FEE214BD24700BA8AF7 /* view */,
 			);
@@ -110,13 +112,6 @@
 				33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */,
 			);
 			path = presenter;
-			sourceTree = "<group>";
-		};
-		33D33FF0214BD25600BA8AF7 /* router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = router;
 			sourceTree = "<group>";
 		};
 		33D33FF1214BD25C00BA8AF7 /* interactor */ = {
@@ -141,6 +136,14 @@
 				33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */,
 			);
 			path = protocols;
+			sourceTree = "<group>";
+		};
+		AE136744214EC3E1003612DC /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AE136745214EC3F6003612DC /* FollowersRouter.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +223,7 @@
 				33D33FDB214BD17400BA8AF7 /* AppDelegate.swift in Sources */,
 				33D33FF9214BDA1600BA8AF7 /* Follower.swift in Sources */,
 				33D33FFD214BDE7200BA8AF7 /* FollowersInteractor.swift in Sources */,
+				AE136746214EC3F6003612DC /* FollowersRouter.swift in Sources */,
 				33D33FFB214BDD6B00BA8AF7 /* FollowersPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
