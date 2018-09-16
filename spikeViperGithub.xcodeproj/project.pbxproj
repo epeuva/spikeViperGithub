@@ -19,9 +19,11 @@
 		33D33FFF214BE56400BA8AF7 /* FollowersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */; };
 		AE136746214EC3F6003612DC /* FollowersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE136745214EC3F6003612DC /* FollowersRouter.swift */; };
 		AE136748214EC63A003612DC /* Followers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE136747214EC63A003612DC /* Followers.storyboard */; };
+		FC6459193FC99CD256A4C883 /* Pods_spikeViperGithub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBA6C13E954785AF6941F41 /* Pods-spikeViperGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spikeViperGithub.release.xcconfig"; path = "Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub.release.xcconfig"; sourceTree = "<group>"; };
 		33D33FD7214BD17300BA8AF7 /* spikeViperGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spikeViperGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D33FDA214BD17400BA8AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D33FDC214BD17400BA8AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,8 +36,10 @@
 		33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersPresenter.swift; sourceTree = "<group>"; };
 		33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersInteractor.swift; sourceTree = "<group>"; };
 		33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersProtocol.swift; sourceTree = "<group>"; };
+		9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spikeViperGithub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE136745214EC3F6003612DC /* FollowersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersRouter.swift; sourceTree = "<group>"; };
 		AE136747214EC63A003612DC /* Followers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Followers.storyboard; sourceTree = "<group>"; };
+		B06A04CE0D62A23F407AEA5C /* Pods-spikeViperGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spikeViperGithub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6459193FC99CD256A4C883 /* Pods_spikeViperGithub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				33D33FD9214BD17300BA8AF7 /* spikeViperGithub */,
 				33D33FD8214BD17300BA8AF7 /* Products */,
+				8745C36BD8D196D2796CFF3D /* Pods */,
+				C0B55FFA6E0C43643A68C90E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,12 +148,29 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		8745C36BD8D196D2796CFF3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B06A04CE0D62A23F407AEA5C /* Pods-spikeViperGithub.debug.xcconfig */,
+				1DBA6C13E954785AF6941F41 /* Pods-spikeViperGithub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE136744214EC3E1003612DC /* router */ = {
 			isa = PBXGroup;
 			children = (
 				AE136745214EC3F6003612DC /* FollowersRouter.swift */,
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		C0B55FFA6E0C43643A68C90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33D33FE9214BD17400BA8AF7 /* Build configuration list for PBXNativeTarget "spikeViperGithub" */;
 			buildPhases = (
+				5204C61AD9BF8D308C7FA189 /* [CP] Check Pods Manifest.lock */,
 				33D33FD3214BD17300BA8AF7 /* Sources */,
 				33D33FD4214BD17300BA8AF7 /* Frameworks */,
 				33D33FD5214BD17300BA8AF7 /* Resources */,
+				9DB126CF3DBC1CE2A00E5646 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +241,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5204C61AD9BF8D308C7FA189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spikeViperGithub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB126CF3DBC1CE2A00E5646 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33D33FD3214BD17300BA8AF7 /* Sources */ = {
@@ -372,6 +437,7 @@
 		};
 		33D33FEA214BD17400BA8AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06A04CE0D62A23F407AEA5C /* Pods-spikeViperGithub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -389,6 +455,7 @@
 		};
 		33D33FEB214BD17400BA8AF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBA6C13E954785AF6941F41 /* Pods-spikeViperGithub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

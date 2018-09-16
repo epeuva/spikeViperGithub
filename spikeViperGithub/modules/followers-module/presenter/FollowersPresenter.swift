@@ -26,10 +26,11 @@ extension FollowersPresenter : FollowersInteractorToPresenterProtocol {
     
     func followersFetchedSuccess(followers: [Follower]) {
         // TODO
+        print("followersFetchedSuccess ...")
     }
     
     func followersFetchFailed() {
-        // TODO
+        print("followersFetchFailed ...")
     }
     
 }
