@@ -18,7 +18,7 @@ class FollowersRouter: FollowersPresenterToRouterProtocol {
         
         let presenter: FollowersViewToPresenterProtocol & FollowersInteractorToPresenterProtocol = FollowersPresenter()
         let interactor: FollowersPresenterToInteractorProtocol = FollowersInteractor()
-        let router:FollowersPresenterToRouterProtocol = FollowersRouter()
+        let router: FollowersPresenterToRouterProtocol = FollowersRouter()
         
         view.presenter = presenter
         presenter.view = view

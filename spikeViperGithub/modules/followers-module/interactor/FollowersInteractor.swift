@@ -19,6 +19,9 @@ class FollowersInteractor : FollowersPresenterToInteractorProtocol
     let URL = "https://api.github.com/users/torvalds/followers"
     
     func fetchFollowers() {
+        
+        print("FollowersPresenter - fetchFollowers ...")
+        
         Alamofire.request(URL).responseJSON { response in
             if (response.response?.statusCode == 200) {
                 if let arrayResponse = response.result.value as! NSArray? {

@@ -13,10 +13,13 @@ class FollowersPresenter : FollowersViewToPresenterProtocol
 {
     
     weak var view: FollowersPresenterToViewProtocol?
-    weak var interactor: FollowersPresenterToInteractorProtocol?
-    weak var router: FollowersPresenterToRouterProtocol?
+    
+    // attention, weak could end in nil!!
+    var interactor: FollowersPresenterToInteractorProtocol?
+    var router: FollowersPresenterToRouterProtocol?
     
     func startUpdateView() {
+        print("FollowersPresenter - startUpdateView ...")
         interactor?.fetchFollowers()
     }
 

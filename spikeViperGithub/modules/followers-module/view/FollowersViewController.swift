@@ -23,7 +23,9 @@ class FollowersViewController: UITableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.presenter.startUpdateView()
+        print("FollowersViewController - viewDidLoad ...")
+        presenter.startUpdateView()
+        // TODO: Add loading
     }
 
 
