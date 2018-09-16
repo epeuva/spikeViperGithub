@@ -26,9 +26,6 @@ class FollowersRouter: FollowersPresenterToRouterProtocol {
         presenter.interactor = interactor
         interactor.presenter = presenter
         
-        // Test
-        interactor.fetchFollowers()
-        
         return view
         
     }

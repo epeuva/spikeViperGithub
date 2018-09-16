@@ -57,6 +57,7 @@ extension FollowersViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FollowerCell", for: indexPath)
         let row = indexPath.row
         
+        // TODO: Proper visualize the followers with image and so on...
         cell.textLabel?.text = followersArray[row].login
         
         return cell

@@ -15,6 +15,7 @@ class FollowersInteractor : FollowersPresenterToInteractorProtocol
     var presenter: FollowersInteractorToPresenterProtocol?
     
     // List of followers of Linus Torvalds GitHub repo
+    // Todo: Move base url to constants
     let URL = "https://api.github.com/users/torvalds/followers"
     
     func fetchFollowers() {

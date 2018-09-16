@@ -17,7 +17,7 @@ class FollowersPresenter : FollowersViewToPresenterProtocol
     weak var router: FollowersPresenterToRouterProtocol?
     
     func startUpdateView() {
-        // TODO
+        interactor?.fetchFollowers()
     }
 
 }
