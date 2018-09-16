@@ -12,8 +12,8 @@ import Foundation
 
 protocol FollowersViewToPresenterProtocol: class {
     var view: FollowersPresenterToViewProtocol? {get set}
-    // var interactor
-    // var router
+    var interactor: FollowersPresenterToInteractorProtocol? {get set}
+    var router: FollowersPresenterToRouterProtocol? {get set}
     
     func startUpdateView()
 }
@@ -30,6 +30,10 @@ protocol FollowersPresenterToInteractorProtocol: class {
     var presenter: FollowersInteractorToPresenterProtocol? {get set}
     
     func fetchFollowers()
+}
+
+protocol FollowersPresenterToRouterProtocol: class {
+    static func createModule()-> FollowersViewController
 }
 
 

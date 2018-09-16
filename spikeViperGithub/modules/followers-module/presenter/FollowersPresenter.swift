@@ -11,7 +11,10 @@ import Foundation
 
 class FollowersPresenter : FollowersViewToPresenterProtocol
 {
+    
     weak var view: FollowersPresenterToViewProtocol?
+    weak var interactor: FollowersPresenterToInteractorProtocol?
+    weak var router: FollowersPresenterToRouterProtocol?
     
     func startUpdateView() {
         // TODO
