@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 
 class FollowersInteractor : FollowersPresenterToInteractorProtocol
 {
@@ -19,9 +20,10 @@ class FollowersInteractor : FollowersPresenterToInteractorProtocol
     func fetchFollowers() {
         Alamofire.request(URL).responseJSON { response in
             if (response.response?.statusCode == 200) {
-                let followersArray = response.result.value as! [Follower]
-                self.presenter?.followersFetchedSuccess(followers: followersArray)
-
+                if let arrayResponse = response.result.value as! NSArray? {
+                    let followersArray = Mapper<Follower>().mapArray(JSONArray: arrayResponse as! [[String : Any]])
+                    self.presenter?.followersFetchedSuccess(followers: followersArray)
+                }
             } else {
                 self.presenter?.followersFetchFailed()
             }
