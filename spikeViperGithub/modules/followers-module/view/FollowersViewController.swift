@@ -8,6 +8,7 @@
 
 import UIKit
 import MBProgressHUD
+import Alamofire
 
 class FollowersViewController: UITableViewController {
     
@@ -70,13 +71,28 @@ extension FollowersViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FollowerCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FollowerCell", for: indexPath) as! FollowerCell
         let row = indexPath.row
         
         // TODO: Proper visualize the followers with image and so on...
-        cell.textLabel?.text = followersArray[row].login
+        cell.followerLabel.text = followersArray[row].login
+        cell.followerLabel.sizeToFit()
+        
+        let imageData = try! Data(contentsOf: URL(string: followersArray[row].avatar_url!)!)
+        cell.followerImage.image = UIImage(data: imageData, scale: UIScreen.main.scale)!
         
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+}
+
+
+class FollowerCell: UITableViewCell {
+    @IBOutlet weak var followerImage: UIImageView!
+    @IBOutlet weak var followerLabel: UILabel!
 }
