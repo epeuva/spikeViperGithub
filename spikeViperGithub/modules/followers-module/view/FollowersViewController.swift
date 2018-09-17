@@ -62,6 +62,7 @@ extension FollowersViewController: FollowersPresenterToViewProtocol {
     
 }
 
+// TableView methods
 extension FollowersViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
