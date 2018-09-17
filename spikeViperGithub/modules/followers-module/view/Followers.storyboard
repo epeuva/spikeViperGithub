@@ -20,26 +20,43 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FollowerCell" rowHeight="80" id="N2J-Ih-nHF" customClass="FollowerCell" customModule="spikeViperGithub" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N2J-Ih-nHF" id="sox-DE-O2l">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N2J-Ih-nHF" id="sox-DE-O2l">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-qg-PhC">
-                                            <rect key="frame" x="10" y="5.5" width="70" height="70"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZAk-qg-PhC">
+                                            <rect key="frame" x="10" y="5" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="2Ly-Ns-VaL"/>
+                                                <constraint firstAttribute="height" constant="70" id="fhv-8C-6PY"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-aN-2dt">
-                                            <rect key="frame" x="85" y="30" width="284" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDO-aN-2dt">
+                                            <rect key="frame" x="90" y="5" width="115" height="32"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Url" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnX-Gy-68R">
+                                            <rect key="frame" x="90" y="34" width="20" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gDO-aN-2dt" firstAttribute="leading" secondItem="ZAk-qg-PhC" secondAttribute="trailing" constant="10" id="5Dy-uD-3Km"/>
+                                        <constraint firstItem="gDO-aN-2dt" firstAttribute="top" secondItem="sox-DE-O2l" secondAttribute="top" constant="5" id="S9m-Fc-fjH"/>
+                                        <constraint firstItem="ZAk-qg-PhC" firstAttribute="leading" secondItem="sox-DE-O2l" secondAttribute="leading" constant="10" id="UVw-Sf-CJ9"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZAk-qg-PhC" secondAttribute="bottom" constant="5" id="XIn-eF-HDT"/>
+                                        <constraint firstItem="ZAk-qg-PhC" firstAttribute="top" secondItem="sox-DE-O2l" secondAttribute="top" constant="5" id="gOq-HZ-hlb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="followerImage" destination="ZAk-qg-PhC" id="nBL-ma-XND"/>
                                     <outlet property="followerLabel" destination="gDO-aN-2dt" id="rj2-mj-NaX"/>
+                                    <outlet property="followerURL" destination="LnX-Gy-68R" id="dlZ-ab-Jds"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

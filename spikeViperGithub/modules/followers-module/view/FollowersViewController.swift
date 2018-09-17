@@ -9,20 +9,23 @@
 import UIKit
 import MBProgressHUD
 import Alamofire
+import AlamofireImage
 
 class FollowersViewController: UITableViewController {
-    
     
     @IBOutlet weak var uiTableView: UITableView!
     
     // Reference to Presenter's Interface (Followers)
-    var presenter:FollowersViewToPresenterProtocol!
+    var presenter: FollowersViewToPresenterProtocol!
     
     
     var followersArray: [Follower] = Array()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Default
+        uiTableView.rowHeight = UITableView.automaticDimension
 
         // Do any additional setup after loading the view.
         print("FollowersViewController - viewDidLoad ...")
@@ -74,20 +77,23 @@ extension FollowersViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FollowerCell", for: indexPath) as! FollowerCell
         let row = indexPath.row
         
-        // TODO: Proper visualize the followers with image and so on...
+        // Follower username
         cell.followerLabel.text = followersArray[row].login
         cell.followerLabel.sizeToFit()
         
-        let imageData = try! Data(contentsOf: URL(string: followersArray[row].avatar_url!)!)
-        cell.followerImage.image = UIImage(data: imageData, scale: UIScreen.main.scale)!
+        // Follower URL
+        cell.followerURL.text = followersArray[row].url
+        cell.followerURL.sizeToFit()
+    
+        // Follower image (with AlamoFire)
+        // TODO: Use default image
+        if let imageURL = URL(string: followersArray[row].avatar_url ?? "") {
+            cell.followerImage.af_setImage(withURL: imageURL)
+        }
         
         return cell
     }
     
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
-    }
     
 }
 
@@ -95,4 +101,5 @@ extension FollowersViewController {
 class FollowerCell: UITableViewCell {
     @IBOutlet weak var followerImage: UIImageView!
     @IBOutlet weak var followerLabel: UILabel!
+    @IBOutlet weak var followerURL: UILabel!
 }
