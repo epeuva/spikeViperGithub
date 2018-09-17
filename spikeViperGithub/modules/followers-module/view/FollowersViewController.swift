@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class FollowersViewController: UITableViewController {
     
@@ -25,7 +26,18 @@ class FollowersViewController: UITableViewController {
         // Do any additional setup after loading the view.
         print("FollowersViewController - viewDidLoad ...")
         presenter.startUpdateView()
-        // TODO: Add loading
+        
+        // loading
+        showLoadingHUD()
+    }
+    
+    private func showLoadingHUD() {
+        let progressHUD = MBProgressHUD.showAdded(to: self.view, animated: true)
+        progressHUD.label.text = "Loading..."
+    }
+    
+    private func hideLoadingHUD() {
+        MBProgressHUD.hide(for: self.view, animated: true)
     }
 
 
@@ -37,6 +49,7 @@ extension FollowersViewController: FollowersPresenterToViewProtocol {
         // TODO
         followersArray = followers
         uiTableView.reloadData()
+        hideLoadingHUD()
     }
     
     func showNoContentsScreen() {
