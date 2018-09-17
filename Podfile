@@ -8,5 +8,7 @@ target 'spikeViperGithub' do
   # Pods for spikeViperGithub
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireObjectMapper', '~> 5.0'
+  
+  pod 'MBProgressHUD', '~> 1.1.0'
 
 end
