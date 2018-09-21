@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+protocol FollowersPresenterToRouterProtocol: class {
+    static func createModule()-> FollowersViewController
+}
+
 class FollowersRouter: FollowersPresenterToRouterProtocol {
     
     static func createModule() -> FollowersViewController {

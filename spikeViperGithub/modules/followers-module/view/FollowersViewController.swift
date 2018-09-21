@@ -11,6 +11,12 @@ import MBProgressHUD
 import Alamofire
 import AlamofireImage
 
+protocol FollowersPresenterToViewProtocol: class {
+    func showFollowersData(followers: [Follower])
+    func showNoContentsScreen()
+    func showError()
+}
+
 class FollowersViewController: UITableViewController {
     
     @IBOutlet weak var uiTableView: UITableView!

@@ -10,6 +10,12 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
+protocol FollowersPresenterToInteractorProtocol: class {
+    var presenter: FollowersInteractorToPresenterProtocol? {get set}
+    
+    func fetchFollowers()
+}
+
 class FollowersInteractor : FollowersPresenterToInteractorProtocol
 {
     var presenter: FollowersInteractorToPresenterProtocol?

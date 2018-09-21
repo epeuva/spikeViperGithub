@@ -9,6 +9,19 @@
 import Foundation
 
 
+protocol FollowersViewToPresenterProtocol: class {
+    var view: FollowersPresenterToViewProtocol? {get set}
+    var interactor: FollowersPresenterToInteractorProtocol? {get set}
+    var router: FollowersPresenterToRouterProtocol? {get set}
+    
+    func startUpdateView()
+}
+
+protocol FollowersInteractorToPresenterProtocol: class {
+    func followersFetchedSuccess(followers: [Follower])
+    func followersFetchFailed()
+}
+
 class FollowersPresenter : FollowersViewToPresenterProtocol
 {
     

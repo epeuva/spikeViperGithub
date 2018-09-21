@@ -16,7 +16,6 @@
 		33D33FF9214BDA1600BA8AF7 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FF8214BDA1600BA8AF7 /* Follower.swift */; };
 		33D33FFB214BDD6B00BA8AF7 /* FollowersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */; };
 		33D33FFD214BDE7200BA8AF7 /* FollowersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */; };
-		33D33FFF214BE56400BA8AF7 /* FollowersProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */; };
 		AE136746214EC3F6003612DC /* FollowersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE136745214EC3F6003612DC /* FollowersRouter.swift */; };
 		AE136748214EC63A003612DC /* Followers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE136747214EC63A003612DC /* Followers.storyboard */; };
 		FC6459193FC99CD256A4C883 /* Pods_spikeViperGithub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */; };
@@ -35,7 +34,6 @@
 		33D33FF8214BDA1600BA8AF7 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersPresenter.swift; sourceTree = "<group>"; };
 		33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersInteractor.swift; sourceTree = "<group>"; };
-		33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersProtocol.swift; sourceTree = "<group>"; };
 		9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spikeViperGithub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE136745214EC3F6003612DC /* FollowersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersRouter.swift; sourceTree = "<group>"; };
 		AE136747214EC63A003612DC /* Followers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Followers.storyboard; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				AE136744214EC3E1003612DC /* router */,
-				33D33FF3214BD27800BA8AF7 /* protocols */,
 				33D33FF2214BD26A00BA8AF7 /* entity */,
 				33D33FF1214BD25C00BA8AF7 /* interactor */,
 				33D33FEF214BD24E00BA8AF7 /* presenter */,
@@ -138,14 +135,6 @@
 				33D33FF8214BDA1600BA8AF7 /* Follower.swift */,
 			);
 			path = entity;
-			sourceTree = "<group>";
-		};
-		33D33FF3214BD27800BA8AF7 /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-				33D33FFE214BE56400BA8AF7 /* FollowersProtocol.swift */,
-			);
-			path = protocols;
 			sourceTree = "<group>";
 		};
 		8745C36BD8D196D2796CFF3D /* Pods */ = {
@@ -296,7 +285,6 @@
 			files = (
 				33D33FF7214BD97700BA8AF7 /* FollowersViewController.swift in Sources */,
 				33D33FDD214BD17400BA8AF7 /* ViewController.swift in Sources */,
-				33D33FFF214BE56400BA8AF7 /* FollowersProtocol.swift in Sources */,
 				33D33FDB214BD17400BA8AF7 /* AppDelegate.swift in Sources */,
 				33D33FF9214BDA1600BA8AF7 /* Follower.swift in Sources */,
 				33D33FFD214BDE7200BA8AF7 /* FollowersInteractor.swift in Sources */,
