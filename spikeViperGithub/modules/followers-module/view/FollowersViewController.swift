@@ -11,7 +11,7 @@ import MBProgressHUD
 import Alamofire
 import AlamofireImage
 
-protocol FollowersPresenterToViewProtocol: class {
+protocol FollowersViewInputProtocol: class {
     func showFollowersData(followers: [Follower])
     func showNoContentsScreen()
     func showError()
@@ -22,7 +22,7 @@ class FollowersViewController: UITableViewController {
     @IBOutlet weak var uiTableView: UITableView!
     
     // Reference to Presenter's Interface (Followers)
-    var presenter: FollowersViewToPresenterProtocol!
+    var presenter: FollowersViewOutputProtocol!
     
     
     var followersArray: [Follower] = Array()
@@ -53,7 +53,7 @@ class FollowersViewController: UITableViewController {
 
 }
 
-extension FollowersViewController: FollowersPresenterToViewProtocol {
+extension FollowersViewController: FollowersViewInputProtocol {
     
     func showFollowersData(followers: [Follower]) {
         // TODO

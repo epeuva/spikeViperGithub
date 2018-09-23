@@ -9,20 +9,20 @@
 import Foundation
 import UIKit
 
-protocol FollowersPresenterToRouterProtocol: class {
+protocol FollowersRouterInputProtocol: class {
     static func createModule()-> FollowersViewController
 }
 
-class FollowersRouter: FollowersPresenterToRouterProtocol {
+class FollowersRouter: FollowersRouterInputProtocol {
     
     static func createModule() -> FollowersViewController {
         
         // Take care the ViewController on Presenters.storyboard has the correct controller asigned
         let view = mainstoryboard.instantiateViewController(withIdentifier: "MyFollowersViewController") as! FollowersViewController
         
-        let presenter: FollowersViewToPresenterProtocol & FollowersInteractorToPresenterProtocol = FollowersPresenter()
-        let interactor: FollowersPresenterToInteractorProtocol = FollowersInteractor()
-        let router: FollowersPresenterToRouterProtocol = FollowersRouter()
+        let presenter: FollowersViewOutputProtocol & FollowersInteractorOutputProtocol = FollowersPresenter()
+        let interactor: FollowersInteractorInputProtocol = FollowersInteractor()
+        let router: FollowersRouterInputProtocol = FollowersRouter()
         
         view.presenter = presenter
         presenter.view = view

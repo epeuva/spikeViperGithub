@@ -10,15 +10,15 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-protocol FollowersPresenterToInteractorProtocol: class {
-    var presenter: FollowersInteractorToPresenterProtocol? {get set}
+protocol FollowersInteractorInputProtocol: class {
+    var presenter: FollowersInteractorOutputProtocol? {get set}
     
     func fetchFollowers()
 }
 
-class FollowersInteractor : FollowersPresenterToInteractorProtocol
+class FollowersInteractor : FollowersInteractorInputProtocol
 {
-    var presenter: FollowersInteractorToPresenterProtocol?
+    var presenter: FollowersInteractorOutputProtocol?
     
     // List of followers of Linus Torvalds GitHub repo
     // Todo: Move base url to constants

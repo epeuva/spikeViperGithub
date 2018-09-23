@@ -9,27 +9,27 @@
 import Foundation
 
 
-protocol FollowersViewToPresenterProtocol: class {
-    var view: FollowersPresenterToViewProtocol? {get set}
-    var interactor: FollowersPresenterToInteractorProtocol? {get set}
-    var router: FollowersPresenterToRouterProtocol? {get set}
+protocol FollowersViewOutputProtocol: class {
+    var view: FollowersViewInputProtocol? {get set}
+    var interactor: FollowersInteractorInputProtocol? {get set}
+    var router: FollowersRouterInputProtocol? {get set}
     
     func startUpdateView()
 }
 
-protocol FollowersInteractorToPresenterProtocol: class {
+protocol FollowersInteractorOutputProtocol: class {
     func followersFetchedSuccess(followers: [Follower])
     func followersFetchFailed()
 }
 
-class FollowersPresenter : FollowersViewToPresenterProtocol
+class FollowersPresenter : FollowersViewOutputProtocol
 {
     
-    weak var view: FollowersPresenterToViewProtocol?
+    weak var view: FollowersViewInputProtocol?
     
     // attention, weak could end in nil!!
-    var interactor: FollowersPresenterToInteractorProtocol?
-    var router: FollowersPresenterToRouterProtocol?
+    var interactor: FollowersInteractorInputProtocol?
+    var router: FollowersRouterInputProtocol?
     
     func startUpdateView() {
         print("FollowersPresenter - startUpdateView ...")
@@ -38,7 +38,7 @@ class FollowersPresenter : FollowersViewToPresenterProtocol
 
 }
 
-extension FollowersPresenter : FollowersInteractorToPresenterProtocol {
+extension FollowersPresenter : FollowersInteractorOutputProtocol {
     
     func followersFetchedSuccess(followers: [Follower]) {
         // TODO
