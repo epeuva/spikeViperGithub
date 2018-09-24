@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33D33FDB214BD17400BA8AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FDA214BD17400BA8AF7 /* AppDelegate.swift */; };
+		33D33FDD214BD17400BA8AF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FDC214BD17400BA8AF7 /* ViewController.swift */; };
+		33D33FE0214BD17400BA8AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D33FDE214BD17400BA8AF7 /* Main.storyboard */; };
+		33D33FE2214BD17400BA8AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D33FE1214BD17400BA8AF7 /* Assets.xcassets */; };
+		33D33FE5214BD17400BA8AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D33FE3214BD17400BA8AF7 /* LaunchScreen.storyboard */; };
+		33D33FF7214BD97700BA8AF7 /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FF6214BD97700BA8AF7 /* FollowersViewController.swift */; };
+		33D33FF9214BDA1600BA8AF7 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FF8214BDA1600BA8AF7 /* Follower.swift */; };
+		33D33FFB214BDD6B00BA8AF7 /* FollowersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */; };
+		33D33FFD214BDE7200BA8AF7 /* FollowersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */; };
+		AE136746214EC3F6003612DC /* FollowersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE136745214EC3F6003612DC /* FollowersRouter.swift */; };
+		AE136748214EC63A003612DC /* Followers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE136747214EC63A003612DC /* Followers.storyboard */; };
+		FC6459193FC99CD256A4C883 /* Pods_spikeViperGithub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DBA6C13E954785AF6941F41 /* Pods-spikeViperGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spikeViperGithub.release.xcconfig"; path = "Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub.release.xcconfig"; sourceTree = "<group>"; };
+		33D33FD7214BD17300BA8AF7 /* spikeViperGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spikeViperGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33D33FDA214BD17400BA8AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33D33FDC214BD17400BA8AF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33D33FDF214BD17400BA8AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33D33FE1214BD17400BA8AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33D33FE4214BD17400BA8AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33D33FE6214BD17400BA8AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33D33FF6214BD97700BA8AF7 /* FollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
+		33D33FF8214BDA1600BA8AF7 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersPresenter.swift; sourceTree = "<group>"; };
+		33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersInteractor.swift; sourceTree = "<group>"; };
+		9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spikeViperGithub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE136745214EC3F6003612DC /* FollowersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersRouter.swift; sourceTree = "<group>"; };
+		AE136747214EC63A003612DC /* Followers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Followers.storyboard; sourceTree = "<group>"; };
+		B06A04CE0D62A23F407AEA5C /* Pods-spikeViperGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spikeViperGithub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33D33FD4214BD17300BA8AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC6459193FC99CD256A4C883 /* Pods_spikeViperGithub.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33D33FCE214BD17300BA8AF7 = {
+			isa = PBXGroup;
+			children = (
+				33D33FD9214BD17300BA8AF7 /* spikeViperGithub */,
+				33D33FD8214BD17300BA8AF7 /* Products */,
+				8745C36BD8D196D2796CFF3D /* Pods */,
+				C0B55FFA6E0C43643A68C90E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33D33FD8214BD17300BA8AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FD7214BD17300BA8AF7 /* spikeViperGithub.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33D33FD9214BD17300BA8AF7 /* spikeViperGithub */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FEC214BD21400BA8AF7 /* modules */,
+				33D33FDA214BD17400BA8AF7 /* AppDelegate.swift */,
+				33D33FDC214BD17400BA8AF7 /* ViewController.swift */,
+				33D33FDE214BD17400BA8AF7 /* Main.storyboard */,
+				33D33FE1214BD17400BA8AF7 /* Assets.xcassets */,
+				33D33FE3214BD17400BA8AF7 /* LaunchScreen.storyboard */,
+				33D33FE6214BD17400BA8AF7 /* Info.plist */,
+			);
+			path = spikeViperGithub;
+			sourceTree = "<group>";
+		};
+		33D33FEC214BD21400BA8AF7 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FED214BD22B00BA8AF7 /* followers-module */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		33D33FED214BD22B00BA8AF7 /* followers-module */ = {
+			isa = PBXGroup;
+			children = (
+				AE136744214EC3E1003612DC /* router */,
+				33D33FF2214BD26A00BA8AF7 /* entity */,
+				33D33FF1214BD25C00BA8AF7 /* interactor */,
+				33D33FEF214BD24E00BA8AF7 /* presenter */,
+				33D33FEE214BD24700BA8AF7 /* view */,
+			);
+			path = "followers-module";
+			sourceTree = "<group>";
+		};
+		33D33FEE214BD24700BA8AF7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FF6214BD97700BA8AF7 /* FollowersViewController.swift */,
+				AE136747214EC63A003612DC /* Followers.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		33D33FEF214BD24E00BA8AF7 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FFA214BDD6B00BA8AF7 /* FollowersPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		33D33FF1214BD25C00BA8AF7 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FFC214BDE7200BA8AF7 /* FollowersInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		33D33FF2214BD26A00BA8AF7 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				33D33FF8214BDA1600BA8AF7 /* Follower.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		8745C36BD8D196D2796CFF3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B06A04CE0D62A23F407AEA5C /* Pods-spikeViperGithub.debug.xcconfig */,
+				1DBA6C13E954785AF6941F41 /* Pods-spikeViperGithub.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE136744214EC3E1003612DC /* router */ = {
+			isa = PBXGroup;
+			children = (
+				AE136745214EC3F6003612DC /* FollowersRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		C0B55FFA6E0C43643A68C90E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9129896CFB7E3273E04F095C /* Pods_spikeViperGithub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33D33FD6214BD17300BA8AF7 /* spikeViperGithub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33D33FE9214BD17400BA8AF7 /* Build configuration list for PBXNativeTarget "spikeViperGithub" */;
+			buildPhases = (
+				5204C61AD9BF8D308C7FA189 /* [CP] Check Pods Manifest.lock */,
+				33D33FD3214BD17300BA8AF7 /* Sources */,
+				33D33FD4214BD17300BA8AF7 /* Frameworks */,
+				33D33FD5214BD17300BA8AF7 /* Resources */,
+				9DB126CF3DBC1CE2A00E5646 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = spikeViperGithub;
+			productName = spikeViperGithub;
+			productReference = 33D33FD7214BD17300BA8AF7 /* spikeViperGithub.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33D33FCF214BD17300BA8AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = epeuva;
+				TargetAttributes = {
+					33D33FD6214BD17300BA8AF7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 33D33FD2214BD17300BA8AF7 /* Build configuration list for PBXProject "spikeViperGithub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33D33FCE214BD17300BA8AF7;
+			productRefGroup = 33D33FD8214BD17300BA8AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33D33FD6214BD17300BA8AF7 /* spikeViperGithub */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33D33FD5214BD17300BA8AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE136748214EC63A003612DC /* Followers.storyboard in Resources */,
+				33D33FE5214BD17400BA8AF7 /* LaunchScreen.storyboard in Resources */,
+				33D33FE2214BD17400BA8AF7 /* Assets.xcassets in Resources */,
+				33D33FE0214BD17400BA8AF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5204C61AD9BF8D308C7FA189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spikeViperGithub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB126CF3DBC1CE2A00E5646 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spikeViperGithub/Pods-spikeViperGithub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33D33FD3214BD17300BA8AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33D33FF7214BD97700BA8AF7 /* FollowersViewController.swift in Sources */,
+				33D33FDD214BD17400BA8AF7 /* ViewController.swift in Sources */,
+				33D33FDB214BD17400BA8AF7 /* AppDelegate.swift in Sources */,
+				33D33FF9214BDA1600BA8AF7 /* Follower.swift in Sources */,
+				33D33FFD214BDE7200BA8AF7 /* FollowersInteractor.swift in Sources */,
+				AE136746214EC3F6003612DC /* FollowersRouter.swift in Sources */,
+				33D33FFB214BDD6B00BA8AF7 /* FollowersPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		33D33FDE214BD17400BA8AF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D33FDF214BD17400BA8AF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33D33FE3214BD17400BA8AF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33D33FE4214BD17400BA8AF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33D33FE7214BD17400BA8AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33D33FE8214BD17400BA8AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33D33FEA214BD17400BA8AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06A04CE0D62A23F407AEA5C /* Pods-spikeViperGithub.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = spikeViperGithub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epeuva.spikeViperGithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33D33FEB214BD17400BA8AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBA6C13E954785AF6941F41 /* Pods-spikeViperGithub.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = spikeViperGithub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.epeuva.spikeViperGithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33D33FD2214BD17300BA8AF7 /* Build configuration list for PBXProject "spikeViperGithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D33FE7214BD17400BA8AF7 /* Debug */,
+				33D33FE8214BD17400BA8AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33D33FE9214BD17400BA8AF7 /* Build configuration list for PBXNativeTarget "spikeViperGithub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D33FEA214BD17400BA8AF7 /* Debug */,
+				33D33FEB214BD17400BA8AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33D33FCF214BD17300BA8AF7 /* Project object */;
+}
